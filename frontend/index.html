@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MujahidToken Interaction</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.8.1/ethers.umd.min.js"></script>
+</head>
+<body>
+  <h1 style="text-align: center;">MujahidToken (MTK)</h1>
+
+  <div style="text-align: center;">
+    <!-- Connect Wallet -->
+    <button id="connectWallet">Connect Wallet</button>
+    <p><strong>Wallet Address:</strong> <span id="walletAddress">Not connected</span></p>
+
+    <!-- Check Balance -->
+    <h3>Check Balance</h3>
+    <button id="checkBalance">Check My Balance</button>
+    <p><strong>MTK Balance:</strong> <span id="balance">0</span> MTK</p>
+
+    <!-- Transfer Tokens -->
+    <h3>Transfer Tokens</h3>
+    <input type="text" id="recipient" placeholder="Recipient Address" />
+    <input type="number" id="amount" placeholder="Amount" />
+    <button id="transfer">Send Tokens</button>
+    <p><strong>Status:</strong> <span id="status"></span></p>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
